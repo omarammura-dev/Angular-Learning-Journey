@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  myname = '';
+  username = '';
+  btnStatus(){
+    if (this.username === '') {
+      return true;
+    }
+    else
+    {
+      return false;
+    }
+  }
+  onBtnClicked(){
+    this.username ='';
+
+  }
 }
